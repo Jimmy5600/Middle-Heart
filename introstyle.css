@@ -31,27 +31,31 @@ h1 {
   position: absolute;
   top: 20px;
   right: 20px;
+  color: white;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  transition: max-height 0.4s ease-out, opacity 0.3s ease;
+  background-color: #444;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
-  padding: 10px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #555;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #555;
 }
 
 nav.active {
@@ -68,7 +72,7 @@ section {
   border-radius: 8px;
 }
 
-.work {
+.work-item {
   background-color: #eaeaea;
   padding: 15px;
   border-radius: 5px;
@@ -116,10 +120,13 @@ footer {
   nav {
     max-height: none !important;
     opacity: 1 !important;
-    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
   }
 
   nav a {
+    width: auto;
+    border: none;
     margin: 0 15px;
   }
 }
@@ -131,17 +138,32 @@ footer {
 
   nav {
     flex-direction: column;
-    background-color: #444;
   }
+}
 
-  nav a {
-    padding: 12px;
-    text-align: center;
-    border-top: 1px solid #555;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+}
 
-  nav a:hover {
-    background-color: #555;
-  }
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
 }
 
