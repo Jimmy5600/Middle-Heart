@@ -166,3 +166,18 @@ form button:hover {
   background-color: #555;
 }
 
+.phi{
+  display: block;
+  margin: 10px auto 0;
+  width: 200px;
+  height: auto;
+}
+
+.tri{
+  position: fixed;
+  width: 150px;
+  height: auto;
+  float: right;
+  margin: 10px;
+  right: 20px;
+}
