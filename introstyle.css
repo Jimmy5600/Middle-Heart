@@ -204,6 +204,9 @@ header {
   z-index: 1001;
 }
 
+img#tracypic{
+  image-resolution: 10px;
+}
 
 
 
