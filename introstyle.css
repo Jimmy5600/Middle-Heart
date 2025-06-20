@@ -18,6 +18,7 @@ header {
   padding: 20px;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 h1 {
@@ -166,3 +167,18 @@ form button:hover {
   background-color: #555;
 }
 
+.tri{
+  position: fixed;
+  top: 10px;
+  right: 50px;
+  width: 150px;
+  height: auto;
+  z-index: 1000;
+}
+
+.phi{
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 10px auto 0;
+}
