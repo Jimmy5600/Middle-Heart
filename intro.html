@@ -4,36 +4,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <title>Our Website</title>
-  <link rel="stylesheet" href="introstyle.css" />
+  <link rel="stylesheet" href="portstyle.css" />
 </head>
-<body>  
+<body>
   <header>
-    <h1>Middle Hearts <img src="C:\Users\masr8\Downloads\logoAIv3.png" class ="tri"> <img src="C:\Users\masr8\Downloads\headertypeBv2 1.png" class ="phi"></h1>
+    
+    
+
+  
+    <img src="C:/Users/masr8/Downloads/logoAIv3.png" class="tri" alt="Top Right Image">
+
+    <h1>Portfolio</h1>
+
+    
+    <img src="C:/Users/masr8/Downloads/headertypeBv2 1.png" class="phi" alt="Center Image">
+
+    
     <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    
     <nav id="nav-menu">
-      <a href="home.html">Home</a>
+      <a href="Home.html">Home</a>
       <a href="intro.html">About</a>
-      <a href="ourwork.html">work</a>
-      <a href="video.html">video</a>
+      <a href="ourwork.html">Work</a>
+      <a href="video.html">Video</a>
       <a href="contact.html">Contact</a>
-      <a href="aha.html">AHA</a>
-      <a href="jreid.html">JReid</a>
+      <a href="aha.html"> AHA</a>
+      <a href="jreid.html"> JReid</a>
     </nav>
   </header>
 
 
-  <section id="intro">
-    <h2>About Us</h2>
-    <p>about</p>
-    <h2>About</h2>
-    <p>about section.</p>
-  </section>
+
+  <section id="home">
+    <h1>Intro To Middle Hearts</h1>
+    <p>placeholder</p>
+
 
   
 
-    </form>
+    
   </section>
-</body>
+  
+
   <footer>
     <p>© 2025 uh copyright.</p>
   </footer>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    toggleButton.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
