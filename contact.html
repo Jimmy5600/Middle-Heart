@@ -59,6 +59,13 @@
 
     </form>
   </section>
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    toggleButton.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
   <footer>
     <p>© 2025 uh copyright.</p>
