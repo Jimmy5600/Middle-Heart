@@ -1,4 +1,4 @@
-/* Base and Background */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,21 +6,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #111; /* fallback */
+  background-color: #111; 
   background-image:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 8px,
-      #e63946 8px,
-      #e63946 10px
-    ),
+    
     repeating-linear-gradient(
       45deg,
       transparent,
       transparent 4px,
-      #f1faee 4px,
-      #f1faee 6px
+      #ffffff 4px,
+      #ff0000 6px
     );
   background-size: 100% 20px, 40px 40px;
   background-position: 0 0, 0 0;
@@ -28,7 +22,7 @@ body {
   color: white;
 }
 
-/* Header */
+
 header {
   background-color: #333;
   color: white;
@@ -38,7 +32,7 @@ header {
   z-index: 100; /* above nav */
 }
 
-/* Header Title */
+
 header h1 {
   margin: 0;
   font-size: 36px;
@@ -46,7 +40,7 @@ header h1 {
   z-index: 110;
 }
 
-/* Corner and center images */
+
 .die {
   position: absolute;
   top: 20px;
@@ -77,7 +71,7 @@ header h1 {
   z-index: 110;
 }
 
-/* Burger toggle */
+
 .menu-toggle {
   font-size: 28px;
   cursor: pointer;
@@ -89,7 +83,7 @@ header h1 {
   user-select: none;
 }
 
-/* Navigation menu (initially hidden) */
+
 nav {
   background-color: #333;
   overflow: hidden;
@@ -109,13 +103,13 @@ nav {
   box-shadow: 0 0 10px rgba(230, 57, 70, 0.7);
 }
 
-/* When nav is active */
+
 nav.active {
   max-height: 400px;
   opacity: 1;
 }
 
-/* Navigation links style */
+
 nav a {
   background-color: #e63946;
   color: white;
@@ -132,7 +126,7 @@ nav a {
   position: relative;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* animation for nav */
 nav a::before {
   content: "❤️";
   font-size: 1.1rem;
@@ -177,7 +171,7 @@ section#intro h1, h3 {
   margin-top: 0;
 }
 
-
+/* footer */
 footer {
   text-align: center;
   background-color: #333;
