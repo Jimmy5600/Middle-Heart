@@ -132,7 +132,7 @@ nav a {
   position: relative;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* animation for nav */
 nav a::before {
   content: "❤️";
   font-size: 1.1rem;
@@ -177,7 +177,7 @@ section#intro h1, h3 {
   margin-top: 0;
 }
 
-
+/* footer */
 footer {
   text-align: center;
   background-color: #333;
